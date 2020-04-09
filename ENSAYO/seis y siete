@@ -1,0 +1,86 @@
+#diccionarios
+
+diccionario = {}
+
+#agrgar primero la llave y despues el valor
+diccionario["nombre"] ="codi"
+valor = diccionario["nombre"] #obtener el valor
+diccionario["nombre"]=90 # si la llave existe se agrga el valor si no existe se agregan los dos
+#no pueden existir llaves duplicadas y si existe  la llave va tomar el ultimo valor
+
+otro = {"a":1, "b":2, "c":3}
+#resultado = "Z" in otro #mirar si la llave se encuentra devuelve un boolean
+#resultado = otro.get("z","no")#el segundo valor se ejecuta sino no existe la llave
+resultado = otro.get("a", {})# forma recomendada
+
+resultado = otro.setdefault("z",{})#llave que no exista y el diccionario  vacio
+
+print(resultado)
+
+
+
+
+
+
+
+dic={'a':1, 'b': 2,'c':3,'d':4,'e':5,'f':6 ,'g':7}
+#resultado = diccionario.keys()#todas las llaves
+#convertir a una tupla o lista
+#resultado = tuple(resultado)
+#las llaves con su valor
+#resultado =diccionario.items()
+
+#eliminar una llave con su valor
+del dic["a"]
+valor =dic.pop("b") #pop los retorna el valor que hemos eliminada
+
+#dic ={}
+#dic.clear()
+print(len(dic))#obtner cuantos elemento
+print(valor)
+
+
+#Valor vacio None es false
+variable =[1,2,3,4]
+variable = None
+
+print(None)
+
+#condiciones
+
+color_luz ='verde'
+if color_luz == 'verde':
+    print('Puede continuar')#identar el código con 4 espacios
+elif color_luz =='Amariilo':
+    print('Alto parcial')
+else:
+    print('Alto total')
+
+variable = True
+
+if variable:
+    print('es verdadero')
+else:
+    print('es falso')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+n

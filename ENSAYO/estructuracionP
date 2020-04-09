@@ -1,0 +1,173 @@
+print("Ejecicio FireShot Capture - ejercicios con ciclos y estructuras de control ")
+
+#Ejercicio 1: diccionario con materias y muestra el promedio
+import operator
+import string
+from collections import  Counter
+
+
+"""calificacion = {}
+suma = 0
+
+num = 0
+
+matematicas =int(input("Ingrese la calificación de matemáticas: "))
+espanol = int(input("Ingrese la calificación de español"))
+Programa = int(input("Ingres la calificación de programación "))
+Algoritmo = int(input("Ingres la calificación de Algoritmos "))
+
+calificacion['matematicas'] = matematicas
+calificacion['espanol '] = espanol
+calificacion['Programa'] = Programa
+calificacion['Algoritmo '] = Algoritmo
+
+Lista = calificacion.values()
+
+for I in Lista:
+    suma += I
+
+print("El promedio es : ",suma/4)
+
+print(calificacion)
+Valores = calificacion.values()
+
+#la materia con mejor primedio
+maxi = max(Valores)
+
+print("Nota mayor: ",maxi) """
+
+#Sumar los elementos de una lista de numero
+
+"""Lista=[]
+cantidad = 10
+mayor = 0
+menor = 0
+suma = 0
+i = 1
+
+while cantidad  > 0:
+   numero = int(input("Numero " + str(i) + ": "))
+   Lista.append(numero)
+   i = i + 1
+   cantidad = cantidad - 1
+
+for num in Lista:
+    suma += num
+
+
+print(Lista)
+print("Pormedio de los numero ", suma/10)
+print("Numero mayor:",max(Lista))
+print("Numero menor:",min(Lista))"""
+
+#polinndromo
+
+#palabra que mas se repute en el capitulo 1 de Frankenstei
+"""archivo_con_el_texto = open('Capitulo.txt','r')
+texto = archivo_con_el_texto.read()
+archivo_con_el_texto.close()
+
+palabras = texto.split()
+contador = Counter(palabras) #importar Counter
+palabras_frecuencia = contador.most_common()[0][0]
+ocurrencias   = texto.count(palabras_frecuencia)
+
+print("La palabra mas frecuente en el archivo de Frankenstei es : %s" % palabras_frecuencia,
+ "Por que se enuentra %s" % ocurrencias,"veces")"""
+
+
+#remplazar  las palabras por la posicion que ocupa en el abecedario
+
+"""abecedario = {1 : "a", 2: "b", 3: "c", 4: "d",  5: "e", 6: "f", 7: "g", 8: "h", 9: "i", 10: "j", 11: "k", 12: "l", 13: "m",
+              14: "n", 15: "ñ", 16: "o", 17: "p",
+               18: "q", 19: "r", 20: "s", 21: "t", 22: "u", 23: "v", 24: "", 25: "w", 26: "y", 27: "z"}
+
+palabra = input("Ingrese la palabra: ")
+resultado =''
+resul =''
+
+for letra in palabra:
+    for clave, valor in abecedario.items():
+        if letra.lower() == valor:
+            resultado = resultado +str(clave)
+            resul = resul + ' ' + str(valor) + '(' + str(clave) + ')'
+
+
+
+print(resul ,resultado)"""
+
+#Cantidad de vocales
+
+"""texto = input("introduzca el texto").lower()
+
+def contar_vocales(cad):
+    voc = 0
+    for c in cad:
+        if c in "aeiou":
+            voc = voc + 1
+    return voc
+
+cantidad = contar_vocales(texto)
+
+print("Cantidad de vocales en el texto es: ", cantidad)"""
+
+#cantidad de vocales por separado
+
+""" texto = input("introduzca el texto").lower()
+
+def contar_vocales(cad):
+
+    for c in cad:
+        contadorA = 0
+        contadorE = 0
+        contadorI = 0
+        contadorO = 0
+        contadorU = 0
+        if c in "a":
+            contadorA = contadorA + 1
+        elif c in "e":
+            contadorE = contadorE + 1
+        elif c in "i":
+            contadorI = contadorI + 1
+        elif c in "o":
+            contadorO = contadorO + 1
+        elif c in "u":
+            contadorU = contadorU + 1
+        dic= {"A": contadorA, "E": contadorE, "I": contadorI, "O": contadorO,"U":contadorU}
+    return dic
+
+cantidad = contar_vocales(texto)
+
+print(cantidad)"""
+
+
+#eliminar vocales
+
+""" texto = input("introduzca el texto").lower() # lower todo en miniscula
+
+vocales = ('a', 'e', 'i', 'o', 'u')
+
+for letra in vocales:
+   texto = texto.replace(letra, "")
+
+print(texto)"""
+
+#Par del 0 100
+
+"""num = 0
+contador = 0
+
+for num in range(0,100):
+    if num%2 ==0:
+        contador += 1
+
+
+print("Total de pares: %s "%contador)"""
+
+
+
+
+
+
+
+

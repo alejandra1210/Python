@@ -1,0 +1,136 @@
+tupla =(1,2,3,4,5,6,7,8,9,0)
+
+elemento = tupla[4] #el indice 4 ,elemento que esta el indice 4
+
+sub = tupla[:9:2]#los primero 9 elemtos con saltos de 2 en dos
+
+
+
+
+#asignar a cada variable que le corresponde en le tupla
+tupla = (1,2,3,4)
+
+#uno, dos, tres, cuatro = tupla[0],tupla[1],tupla[2], tupla[3]
+#uno,dos,tres,cuatro = tupla
+#si la tupla es mas grande se pone * en la ultima variable
+
+uno,dos,tres, *cuatro = tupla
+
+# y da como resultada una lista en la ultima variable
+
+
+print(uno)
+print(dos)
+print(tres)
+print(cuatro)
+
+#zip
+
+tupla = (1, 2, 3, 4, 5, 6)
+lista = [10, 20, 30, 40, 50, 60]
+
+resultado  = zip(tupla,lista)
+resultado = tuple(resultado)
+#genera una tupla ((1,10),(2,20)) o pone list obtenemos una lita [(1,20),(2,20)]
+
+
+
+
+
+
+
+lista =["curso","c++","java"]
+
+tupla = ("lista","tupla","intraducion")
+
+#convertir lista en tupla y tupla en lista
+tuple(lista)
+#list(tuple)
+
+#string pueden ser convertidos en tuplas y lista
+
+mensaje = "Hola cesde virtual "
+tuple(mensaje)
+list(mensaje)
+
+#String
+curso = "Curso de python 3"
+
+#resultado =len(curso)
+
+resultado = curso[0] #indices 1 al 17 obtendremos la primera letra curso[1:16:2] tambien con saltos
+
+print(resultado)
+#string no se pueden modificar
+#pero si generar nuevos string con string ya exsistentes
+
+lenguajes ="Python; java; ruby; php; c++"
+
+separardor = ";"
+resultado =lenguajes.split(separardor) #ejenera una lista , y los divide por cada punto y como que enceuntre
+
+nuevo_string = " ".join(resultado) #separdos por un espacio o cualquier cosa  join covierte una lista en string
+
+#converti un comentario de varia lines en lista
+
+texto = """esto es
+ un comentario 
+ de varias
+ lineas """
+
+resultado = texto.splitlines()
+print(resultado)
+
+
+curso="python"
+version = "3"
+
+resultado = "Curso de %s %s" %(curso,version) #los % son replazados por las variables con respecto a la pocisión
+resultado = "Curso de {a} {b}".format(a=curso,b=version)#podemos nombras las variables, con respecto nombre
+
+print(resultado)
+
+
+
+curso = "P" + curso[1:] #poner la p en mayuscula este es un string nuevo no modificacmos
+#concatenar un nuevo entero, no sepuede concatenar un tipo de dato diferente a un string
+
+curso = curso + " "+str(3) #convirte un numero en un string
+print(curso)
+
+comillas_dobles = "es lo mismo 'asi' "
+comillas_simples = 'que ponerlo "asi"'
+
+print(comillas_dobles,comillas_simples)
+
+mensaje ="este es un texto un poco grande "
+
+#para saber si string almacena otro strint cunatas veces
+#resultado =mensaje.count("texto")
+#resultado = "texto" in mensaje #not in
+#resultado = mensaje.find("texto")#a la posicon a la cual se encuentra la primera letra del string que buscamos o si no se encutra pone el -1
+
+#extraer  texto de nuestro mensaje
+#resultado = mensaje.find("texto")
+#resultado = mensaje[resultado: resultado +len("texto")] recordemos que len es la longitud
+
+
+
+
+#si se encutra al principio
+#resultado = mensaje.startswith("este")#booleano sencible a las mayusculas y minusculas endswith
+
+
+print(resultado)
+
+
+
+
+
+
+
+
+
+
+
+

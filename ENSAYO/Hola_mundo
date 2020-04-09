@@ -1,0 +1,85 @@
+print("Hola mundo")
+tutor =("Codi")
+
+print(tutor)
+
+variable_uno = 10
+variable_dos = 18
+
+mayor = variable_uno > variable_dos
+menor = variable_uno < variable_dos
+mayor_igual = variable_uno >= variable_dos
+diferente = variable_uno != variable_dos
+
+resultado = True and True and diferente
+
+
+"""  nombre  =input("Cual es tu nombre\n")
+#\n salto de linea
+print("Hola",nombre)
+
+edad  =int(input("Cual es tu edad"))
+print("edad",edad)
+
+print("Cual es tu peso")
+peso  =float(input())
+print("peso",peso)
+
+print("estas autorizado(si o no ")
+autorizado = input() == "si" """
+
+""" devuelve  un boleano true o false, si la respuesta 
+del usuario es si entonce 
+devuelve true """
+
+cursos = ["python", "php","java","c++"]
+#curso = cursos[1]
+#si se pone -1 se recoge la inversa
+#print(curso)
+
+sub = cursos[0:2]
+#indice de partida y indice final,[5:] todos a partir del 5
+
+#desde hasta y ahora con saltos en dos en dos
+sub = cursos[0:4:2]
+
+#inversos de una lista
+# sub = cursos[:: - 1]
+
+lista  = [8.12, 90, 12,1, 5, 44,1.32]
+
+#ordenar
+#lista.sort()
+#ordenar de forma desendente
+lista.sort(reverse= True)
+#numero mas grande y numero mas pequeño tambien con el max min
+#mayor = lista(0)
+
+#longitud
+longitud = len(lista)
+
+#si el 8 esta en la lista regresa un valor booleano
+resultado = 8 in lista
+
+#que indice
+#lista.index(8.17)
+#count cantidad de veces que esta el 5
+print(longitud)
+
+#matriz
+fila_uno =[10,20]
+fila_dos =[30,40]
+matriz = [fila_uno, fila_dos]
+
+#el primer elemento utilizado los indices
+primer_elemento = matriz[0][0]
+print(primer_elemento)
+
+
+
+
+
+
+
+
+

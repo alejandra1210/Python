@@ -1,0 +1,60 @@
+print("Ejecicio FireShot Capture - ejercicios  conceptos básicos Python ")
+
+""" ejercicio 1
+
+base =int(input("Cual es la base del triangulo\n"))
+altura =int(input("Cual es la altura del triangulo\n"))
+print("área del triangulo es :",base * altura) """
+
+
+""" ejercicio 2
+dolores =int(input("ingrese la cantidad que desea convertir\n"))
+convertir = dolores * 3900
+print("La cantidad es  :",convertir) """
+
+"""ejercicio 3
+grados  =float(input("ingrese los grados centigrados \n"))
+convertir = ((grados * 9)/5) + 32
+print("la conversión de los grados centigrados a fahrenheit es : ",convertir)"""
+
+#ejercicio 4
+#print("la cantidad de segundos que tiene un lustro es  : ",float(1.577e+8))
+
+#ejercicio 5
+print("la cantidad de segundos que se demora la luz en viajar a marte es   : ",182)
+
+#ejercicio 6
+ #1 metro son 100 cm entonces en 1 metro da dos vueltas 100/50
+ #un kilometro
+#son 1000 metros
+vueltasM = 100/50
+vueltaskm = vueltasM * 1000
+print("la cantidad de vueltas ", int(vueltaskm))
+
+#ejercico 7
+import math
+tangente  = math.tan(20)
+
+longitud = 20 * tangente
+print("la cantidad de Longitu de sombra es: ", longitud)
+
+#ejercicio 8
+""" edad1  =int(input("Cual es tu edad \n"))
+
+edad2 =int(input("Cual es tu edad \n"))
+
+if edad1 == edad2 :
+    print("TRUE")
+
+else:
+    print("false") """
+
+#ejercicio 10
+espanol  = float(input("Digite la nota de español \n"))
+matemaicas =  float(input("Digite la nota de matemáticas \n"))
+economia =  float(input("Digite la nota de economia  \n"))
+Progra = float(input("Digite la nota de programación  \n"))
+ingles = float(input("Digite la nota de  ingles \n"))
+
+promedio = (espanol + matemaicas + economia + Progra + ingles) / 5
+print("El promedio es igual a ",promedio)

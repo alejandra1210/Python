@@ -1,0 +1,77 @@
+"""numero = 123456789
+contador = 0
+
+while numero >=1:
+    contador +=1; #aunmetar la variable o disminuir con -
+    numero = numero/10
+else: #se ejecuta cuando la condición ya no se cumpla
+ print("la cantidad de digitos", contador)"""
+
+"""numeros =[1,2,3,4,5,6,7,8,9,10] con los diccionarios vemos son las llaves 
+
+for numero in numeros:
+    print(numero)"""
+
+"""valores = ((10,20),["string","string"],(True, False))
+
+for valor1,valor2 in valores:
+    print(valor1,valor2)"""
+
+#rangos
+
+"""for valor in range(1,10):#numero qu comienze y numero que termina tambien podemos hacae con numeros negativos
+    #con saldos en 2
+    print(valor)
+
+    lista =[1,2,3]
+    for indice, valor in enumerate(lista):
+        print("indice",indice,"valor",valor)"""
+
+"""title = "curso de python 3"
+
+for caracter in title:
+    if caracter =="P":
+        break #finaliza el ciclo
+        continue  #que ciclo saltea la siguiente 
+    print(caracter)"""
+
+"""calificacion = 10
+color = 'verde'if calificacion >=7 else 'rojo'
+
+print(calificacion, color)"""
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

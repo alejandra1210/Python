@@ -1,0 +1,114 @@
+print(" ejercicios básicos para Python ")
+#ejercicio 1
+#Promedio de un grupo entre 18 años o menos
+"""continuar = 0
+edad  = 0
+
+conPers = 0
+acumEdad = 0
+
+continuar = int(input("Escriba cuantos registros  desea ingresar "))
+for valor in range(0,continuar):
+  edad = int(input("Ingrese la edad: "))
+  contPers += 1
+  acumEdad += edad
+
+  if edad >= 18:
+        print("alumno mayor de 18 años")
+        contPers -= 1
+        acumEdad -= edad
+
+
+
+print("promedio de edad " , acumEdad/contPers)"""
+
+#Utilización del siglo for ejercicio 2
+
+
+"""ccantidadaSumar = 0
+Total_suma = 0
+
+
+for valor in range(1,10):
+ cantidadaSumar= input("digite la cantidad que desea sumar")
+ total_suma = cantidadaSumar + cantidadaSumar
+
+print("Total suma", total_suma)"""
+
+
+#la estatura promedio de un grupo de personas ejercicio 3
+
+"""estatura  = 0
+
+contPers = 0
+acumEstatura = 0
+
+continuar = int(input("Escriba cuantos registros  desea ingresar "))
+for valor in range(1,continuar):
+
+  estatura = int(input("Ingrese la estatura: "))
+  contPers += 1
+  acumEstatura += estatura
+
+
+
+print("promedio de edad " ,  acumEstatura / contPers)"""
+
+
+#ejecicio 4 = cuantos menores y cuanto mayores en cantidad
+
+
+"""ncant = 0
+numeroCant=0
+Contadormenor = 0
+Contadormayor =0
+
+ncant = int(input("Digite cuantos registros desea validar "))
+
+for valor in range(0,ncant):
+    numeroCant = int(input("Digite la cantidad que sea validar"))
+    if numeroCant <= 0:
+        Contadormenor += 1
+    else:
+        Contadormayor +=1
+print("Total menores:",Contadormenor,"Total mayores",Contadormayor)"""
+
+#ejercicio 5
+#Numeros pares e impares entre 0 y 1000
+"""num =0
+numerototal = 0
+contadorpar=0
+contadorimpar=0
+multiplicador = 1
+
+for num in range(0,100):
+    multiplicador = multiplicador + num
+    if num%2 == 0:
+      contadorpar += 1
+    else:
+     contadorimpar +=1
+
+
+print("Números pares: ",contadorpar,"Numeros impares: ", contadorimpar, "Multiplicación: ",multiplicador)"""
+
+#ejercicio 6
+#funcion Fibonacci 1 +1 = 1 +2 = 3
+                            #2 + 3 =5
+                               #3 + 5 = 8
+
+
+cantidad = int(input("Ingrese la cantidad que numeros que dese calcular l"))
+
+def fib(cantidad):
+    if cantidad < 2:
+        return cantidad
+    else:
+        # fn = fn-1 + fn-2
+        return fib(cantidad - 1) + fib(cantidad - 2)
+
+
+
+
+for x in range(10):
+    print(fib(x))
+
