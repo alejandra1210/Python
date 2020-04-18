@@ -1,26 +1,28 @@
 print(" ejercicios básicos para Python ")
 #ejercicio 1
 #Promedio de un grupo entre 18 años o menos
-"""continuar = 0
-edad  = 0
 
-conPers = 0
+"""
+edad = 0
+
+contPers = 0
 acumEdad = 0
 
-continuar = int(input("Escriba cuantos registros  desea ingresar "))
-for valor in range(0,continuar):
-  edad = int(input("Ingrese la edad: "))
+while (edad != "*"):
+  edad = input("Ingrese la edad  o ' * ' para terminar: ")
   contPers += 1
-  acumEdad += edad
+  #acumEdad += edad
+  if edad.isdigit():
+     edad = int(edad)
+     if edad >= 18:
+         print("alumno mayor de 18 años")
+         contPers -= 1
+         #acumEdad -= edad
 
-  if edad >= 18:
-        print("alumno mayor de 18 años")
-        contPers -= 1
-        acumEdad -= edad
 
+print("promedio de edad", acumEdad / contPers)
 
-
-print("promedio de edad " , acumEdad/contPers)"""
+"""
 
 #Utilización del siglo for ejercicio 2
 
@@ -55,23 +57,24 @@ for valor in range(1,continuar):
 print("promedio de edad " ,  acumEstatura / contPers)"""
 
 
-#ejecicio 4 = cuantos menores y cuanto mayores en cantidad
+#ejecicio 4 = cuantos menores y cuanto mayores de 0
 
 
-"""ncant = 0
-numeroCant=0
+"""  
+num = 0
 Contadormenor = 0
-Contadormayor =0
+Contadormayor = 0
+while (num != "*"):
+    num = input("Ingrese el numero o ' * ' para terminar: ")
+    if num.isdigit():
+        num = int(num)
+        if (num <= 0):
+            Contadormenor += 1
+        elif (num > 0):
+            Contadormayor += 1
 
-ncant = int(input("Digite cuantos registros desea validar "))
-
-for valor in range(0,ncant):
-    numeroCant = int(input("Digite la cantidad que sea validar"))
-    if numeroCant <= 0:
-        Contadormenor += 1
-    else:
-        Contadormayor +=1
-print("Total menores:",Contadormenor,"Total mayores",Contadormayor)"""
+print("Cantidad de numeros menores o iguales a cero: " + str(Contadormenor) + "\n" +
+      "Cantidad de numeros mayores a cero: " + str(Contadormayor)) """
 
 #ejercicio 5
 #Numeros pares e impares entre 0 y 1000
